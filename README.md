@@ -30,15 +30,20 @@ pip install -e .
 ## 🚀 사용 방법
 
 ```bash
-# 기본 학습
-python learning/train_jax_ppo.py --env_name HumanoidStand
+# 프로젝트 루트에서 실행 (권장)
+python train.py --env_name HumanoidStand
 
 # 고급 옵션
-python learning/train_jax_ppo.py \
+python train.py \
     --env_name HumanoidStand \
-    --num_timesteps 10000000 \
+    --num_timesteps 50000000 \
     --num_envs 2048 \
-    --use_tb
+    --use_tb \
+    --num_videos 5
+
+# 또는 mujoco_playground 디렉토리에서 직접 실행
+cd mujoco_playground
+python learning/train_jax_ppo.py --env_name HumanoidStand
 ```
 
 ## 🎮 주요 환경
