@@ -42,7 +42,9 @@ env/
 *.db
 
 # MuJoCo Playground specific
-mujoco_playground/
+# mujoco_playground/  # 이제 포함됨
+mujoco_playground/logs/
+mujoco_playground/__pycache__/
 logs/
 checkpoints/
 test_output/
