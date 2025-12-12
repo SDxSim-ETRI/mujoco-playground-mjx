@@ -52,5 +52,3 @@ python learning/train_jax_ppo.py \
 MuJoCo Playground는 Apache 2.0 라이선스입니다.
 
 ---
-
-**Happy Training! 🚀**
